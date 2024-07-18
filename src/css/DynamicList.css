@@ -1,0 +1,27 @@
+ol {
+	list-style-type: decimal;
+	padding-left: 20px;
+	margin: 0; /* Remove default margin */
+  }
+  
+  li {
+	margin: 10px 0;
+	cursor: pointer;
+	position: relative;
+	padding: 5px 0; /* Adjust padding to control spacing */
+	display: flex;
+	flex-direction: column; /* Ensure the title and description are stacked */
+  }
+  
+  .description {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-in-out;
+	padding-left: 20px;
+	margin-top: 5px; /* Adjust spacing between title and description */
+  }
+  
+  .description.active {
+	max-height: 100px; /* Adjust based on the content height */
+  }
+  

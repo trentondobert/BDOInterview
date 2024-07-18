@@ -1,0 +1,69 @@
+/* Homepage.css */
+
+#traits {
+	text-align: left;
+}
+
+.homepage {
+	color: white; /* Set font color to white */
+	text-align: center;
+	background-color: #485988;
+}  
+
+.modern-home-button {
+    background-color: #638E98; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+	margin-bottom: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modern-home-button:hover {
+    background-color: #3C717D; /* Darker Green */
+}
+
+
+h1 {
+	font-size: 55px;
+}
+
+.sectionDiv {
+	overflow: hidden;
+	background-color: #132450;
+	padding: 10px;
+	margin-top: 10px;
+}
+  
+  .content {
+	float: left; 
+	width: 60%; 
+  }
+  .content p {
+	font-size: 25px; 
+  }
+  .image-container {
+	float: right; 
+	width: 40%; 
+  }
+  
+  #portrait {
+	width: 100%; /* Make the image fill its container */
+	max-width: 400px; /* Set your desired max width */
+	height: auto; /* Maintain aspect ratio */
+	border-radius: 50%; /* Make the image round */
+	border: 5px solid #dba009; /* Add a 5px solid border with color #ccc */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+  }
+
+  #QRcode {
+	width: 100%;
+	max-width: 150px;
+	height: auto;
+  }

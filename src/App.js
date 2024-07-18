@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
+import Navbar from './view/Navbar';
+import Homepage from './view/Homepage';
+import './css/App.css'; // Import the CSS file
+import BDOCulture from './view/BDOCulture';
+import BDOTechnology from './view/BDOTechnology';
+import ThisSite from './view/ThisSite';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    let Component
+    switch (window.location.pathname) {
+        case "/Home":
+            Component = Homepage
+            break
+        case "/BDOCulture":
+            Component = BDOCulture
+            break
+        case "/BDOTechnology":
+            Component = BDOTechnology
+            break
+        case "/ThisSite":
+            Component = ThisSite
+            break
+        default:
+            Component = Homepage
+    }
+
+
+    return (
+        <div>
+            <Navbar />
+            <Component />
+        </div>
+    );
 }
 
 export default App;
